@@ -1,0 +1,9 @@
+{
+    "editor.tabSize":2,
+    "files.eol":"\n",
+    "editor.rulers": [
+        120
+    ],
+    // You need to install Mojolicious extension, use Ctrl+n or select manually this language in your file
+    "files.defaultLanguage": "perl+mojolicious",
+}
