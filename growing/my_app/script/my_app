@@ -1,0 +1,21 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use Mojo::File qw(curfile);
+use lib curfile->dirname->sibling('lib')->to_string;
+use Mojolicious::Commands;
+use FindBin;
+
+ # Ejemplos de rutas en proyecto
+ #print "Esto encontre ========> ", curfile->dirname->sibling('lib')->to_string,"\n";
+ #print "Esto es de FINDBIN ====> ","$FindBin::Bin","\n";
+ #print "Esto es de FINDBIN 2 ====> ","$FindBin::Bin/../lib","\n";
+ # OUTPUT
+ #    Esto encontre ========> /home/salomon/Documents/Cursos/Mojolicious/growing/my_app/lib
+ #    Esto es de FINDBIN ====> /home/salomon/Documents/Cursos/Mojolicious/growing/my_app/script
+ #    Esto es de FINDBIN 2 ====> /home/salomon/Documents/Cursos/Mojolicious/growing/my_app/script/../lib
+
+# Start command line interface for application
+Mojolicious::Commands->start_app('MyApp'); # Inicia con /lib/MyApp.pm
