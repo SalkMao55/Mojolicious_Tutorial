@@ -1,0 +1,5 @@
+% if (my $pageError = $data) {
+<%= $pageError %>
+% } else {
+  Esto debe mostrarse
+% }
